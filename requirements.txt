@@ -1,1 +1,1 @@
-pyarrow == 4.0.1base58 == 2.1.0streamlit == 0.87.0pandas == 1.2.4stqdm == 0.0.4DateTime == 4.3plotly.express == 0.4.1beautifulsoup4 == 4.9.3requests == 2.25.1warnos
+pyarrow == 4.0.1base58 == 2.1.0streamlit == 0.87.0pandas == 1.2.4stqdm == 0.0.4DateTime == 4.3plotly.express == 0.4.1beautifulsoup4 == 4.9.3requests == 2.25.1warnos.path2 == 0.0.4
