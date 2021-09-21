@@ -1,5 +1,5 @@
 URL = 'https://es.ign.com'
-DATASET = 'test.csv'
+DATASET = '/app/ign_scraper/test.csv'
 
 month_es = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto',
              'septiembre', 'octubre', 'noviembre', 'diciembre']
