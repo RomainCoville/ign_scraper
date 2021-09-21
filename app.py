@@ -111,10 +111,6 @@ if st.session_state.df_old.shape[0] > 0:
     st.plotly_chart(fig, use_container_width=True)
 
     st.write(st.session_state.df_old)
-
-    repo.remotes[0].add('test_.csv')
-    repo.remotes[0].commit('spain file upload')
-    repo.remotes[0].push('test_.csv')
 else:
     st.write('No data to display')
 
@@ -123,3 +119,7 @@ if st.button('Download data') and st.session_state.df_old.shape[0] > 0:
     b64 = base64.b64encode(csv.encode()).decode()  # some strings
     href = f'<a href="data:file/csv;base64,{b64}" download="myfilename.csv">Download csv file</a>'
     st.markdown(href, unsafe_allow_html=True)
+
+repo.remotes[0].add('test_.csv')
+repo.remotes[0].commit('spain file upload')
+repo.remotes[0].push('test_.csv')
