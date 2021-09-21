@@ -107,7 +107,8 @@ else:
 if st.button('Download data') and st.session_state.df_old.shape[0] > 0:
     csv = st.session_state.df_old.to_csv(index=False)
     b64 = base64.b64encode(csv.encode()).decode()  # some strings
-    href = f'<a href="data:file/csv;base64,{b64}" download="myfilename.csv">Download csv file</a>'
+    href = f'<a href="data:file/csv;base64,{b64}" download="ign_spain_{today.year}{str(today.month).zfill(2)}' \
+           f'{str(today.day).zfill(2)}.csv">Download csv file</a>'
     st.markdown(href, unsafe_allow_html=True)
 
 #repo = git.Repo()
