@@ -13,7 +13,9 @@ import git
 
 stqdm.pandas()
 
-print(git.Repo())
+repo = git.Repo()
+repo.remotes.origin.push()
+
 st.text(os.path.abspath(os.getcwd()))
 
 st.title('IGN Spain scraper')
