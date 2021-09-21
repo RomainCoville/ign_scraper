@@ -111,6 +111,10 @@ if st.session_state.df_old.shape[0] > 0:
     st.plotly_chart(fig, use_container_width=True)
 
     st.write(st.session_state.df_old)
+
+    repo.remotes[0].add('test_.csv')
+    repo.remotes[0].commit('spain file upload')
+    repo.remotes[0].push('test_.csv')
 else:
     st.write('No data to display')
 
