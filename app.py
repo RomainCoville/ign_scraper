@@ -8,10 +8,10 @@ import plotly.express as px
 from scrapper import scrap_data, get_article_data
 from global_variables import DATASET, URL, es_month_trad
 
-import os
-print(os.path.abspath(os.getcwd())
-
 stqdm.pandas()
+
+import os
+st.text(os.path.abspath(os.getcwd()))
 
 st.title('IGN Spain scraper')
 st.subheader('Scraper results : ')
