@@ -14,7 +14,9 @@ import git
 stqdm.pandas()
 
 repo = git.Repo()
+print('hello')
 for remote in repo.remotes:
+    print('hello')
     print(remote.name, remote.url)
 
 st.text(os.path.abspath(os.getcwd()))
