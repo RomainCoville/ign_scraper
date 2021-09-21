@@ -14,10 +14,10 @@ import git
 stqdm.pandas()
 
 repo = git.Repo()
-print('hello')
+st.text('hello')
 for remote in repo.remotes:
-    print('hello')
-    print(remote.name, remote.url)
+    st.text('hello')
+    st.text(remote.name, remote.url)
 
 st.text(os.path.abspath(os.getcwd()))
 
