@@ -13,7 +13,7 @@ import git
 
 stqdm.pandas()
 
-git.Repo()
+print(git.Repo())
 st.text(os.path.abspath(os.getcwd()))
 
 st.title('IGN Spain scraper')
