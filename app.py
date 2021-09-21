@@ -8,19 +8,9 @@ import plotly.express as px
 from scrapper import scrap_data, get_article_data
 from global_variables import DATASET, URL, es_month_trad
 
-import os
 import git
 
 stqdm.pandas()
-
-repo = git.Repo()
-st.text('hello')
-st.text(repo.remotes[0])
-for remote in repo.remotes:
-    st.text('hello')
-    st.text(remote.url)
-
-st.text(os.path.abspath(os.getcwd()))
 
 st.title('IGN Spain scraper')
 st.subheader('Scraper results : ')
@@ -120,6 +110,7 @@ if st.button('Download data') and st.session_state.df_old.shape[0] > 0:
     href = f'<a href="data:file/csv;base64,{b64}" download="myfilename.csv">Download csv file</a>'
     st.markdown(href, unsafe_allow_html=True)
 
-repo.remotes[0].add('test_.csv', 'https://github.com/RomainCoville/ign_scraper.git')
-repo.remotes[0].commit('spain file upload')
-repo.remotes[0].push('test_.csv')
+#repo = git.Repo()
+#repo.remotes[0].add('test_.csv', 'https://github.com/RomainCoville/ign_scraper.git')
+#repo.remotes[0].commit('spain file upload')
+#repo.remotes[0].push('test_.csv')
