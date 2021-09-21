@@ -14,7 +14,7 @@ import git
 stqdm.pandas()
 
 repo = git.Repo()
-repo.remotes.origin.push()
+repo.index.origin.push()
 
 st.text(os.path.abspath(os.getcwd()))
 
