@@ -15,6 +15,7 @@ stqdm.pandas()
 
 repo = git.Repo()
 st.text('hello')
+st.text(repo.remotes[0])
 for remote in repo.remotes:
     st.text('hello')
     st.text(remote.url)
