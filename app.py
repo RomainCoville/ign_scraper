@@ -120,6 +120,6 @@ if st.button('Download data') and st.session_state.df_old.shape[0] > 0:
     href = f'<a href="data:file/csv;base64,{b64}" download="myfilename.csv">Download csv file</a>'
     st.markdown(href, unsafe_allow_html=True)
 
-repo.remotes[0].add('test_.csv')
+repo.remotes[0].add('test_.csv', 'https://github.com/RomainCoville/ign_scraper.git')
 repo.remotes[0].commit('spain file upload')
 repo.remotes[0].push('test_.csv')
