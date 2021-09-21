@@ -17,7 +17,7 @@ repo = git.Repo()
 st.text('hello')
 for remote in repo.remotes:
     st.text('hello')
-    st.text(remote.name, remote.url)
+    st.text(remote.url)
 
 st.text(os.path.abspath(os.getcwd()))
 
