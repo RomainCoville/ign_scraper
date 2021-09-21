@@ -11,6 +11,7 @@ from global_variables import DATASET, URL, es_month_trad
 stqdm.pandas()
 
 import os
+import git
 st.text(os.path.abspath(os.getcwd()))
 
 st.title('IGN Spain scraper')
