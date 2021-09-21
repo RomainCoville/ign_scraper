@@ -65,7 +65,7 @@ if st.sidebar.button('Scrap 🚀', on_click=display_df, args=(DATASET,)):
     st.session_state.df_old = pd.concat([st.session_state.df_old, df_new], axis=0).drop_duplicates().reset_index(
         drop=True)
     st.session_state.df_old = st.session_state.df_old.fillna('None')
-    st.session_state.df_old.to_csv(DATASET, index=False)
+    #st.session_state.df_old.to_csv(DATASET, index=False)
     st.session_state.n_articles_new = st.session_state.df_old.shape[0]
     st.sidebar.success(f'New article count : {st.session_state.n_articles_new}')
 
